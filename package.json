@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "up": "git add . && git commit -m",
+    "postup": "git push"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
@@ -16,5 +18,8 @@
     "postcss-sort-media-queries": "^6.7.1",
     "prettier": "^3.4.2",
     "vite": "^7.3.7"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.14.3"
   }
 }

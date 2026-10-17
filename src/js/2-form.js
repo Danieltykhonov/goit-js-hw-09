@@ -19,7 +19,7 @@ if (savedData) {
   form.elements.message.value = formState.message;
 }
 
-// 2. Збереження при введенні (делегування на формі)
+// 2. save of take
 form.addEventListener('input', event => {
   const { name, value } = event.target;
 
@@ -31,7 +31,7 @@ form.addEventListener('input', event => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formState));
 });
 
-// 4. Відправка форми
+// 4. up form
 form.addEventListener('submit', event => {
   event.preventDefault();
 
